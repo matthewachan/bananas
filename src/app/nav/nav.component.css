@@ -1,0 +1,26 @@
+body, h1, h2, h3, h4, h5, p, a {
+	color: white;
+}
+
+ul a:hover {
+	color: gray;
+}
+
+
+.navbar .navbar-brand:hover {
+	color: #4286f4;
+}
+
+a:visited, a:active {
+	text-decoration: none;
+	color: white;
+}
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+    background-color: rgba(0,0,0,0);
+}
+
+.active {
+	text-decoration: underline;
+	color: gray;
+}
