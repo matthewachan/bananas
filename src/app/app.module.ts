@@ -2,32 +2,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { NavComponent } from './nav/nav.component';
-import { HomeComponent } from './home/home.component';
-
-import { routing, appRouterProviders } from './app.routes';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ContactComponent } from './contact/contact.component';
-
 
 @NgModule({
   declarations: [
-  AppComponent,
-  NavComponent,
-  HomeComponent,
-  PortfolioComponent,
-  ContactComponent
+    AppComponent
   ],
   imports: [
-  BrowserModule,
-  FormsModule,
-  HttpModule,
-  routing
+    BrowserModule,
+    FormsModule,
+    HttpModule
   ],
-  providers: [appRouterProviders],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
