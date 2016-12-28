@@ -1,0 +1,14 @@
+body, h1, h2, h3, h4, h5, p, a, li, span {
+	color: white;
+	font-family: 'Open Sans';
+}
+
+li {
+	list-style: none;
+}
+
+.hero {
+	display: block;
+	margin: 200px auto 0 auto;
+	width: 100%;
+}
