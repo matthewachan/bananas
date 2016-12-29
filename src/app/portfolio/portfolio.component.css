@@ -1,10 +1,47 @@
+h2, h3 {
+	font-family: 'Raleway';
+}
+li, p, a {
+	font-family: 'Open Sans';
+}
+h2 {
+	color: gray;
+	font-size: 40px;
+	font-weight: 500;
+}
+h3 {
+	color: #F57C00;
+	font-size: 20px;
+	font-weight: 500;
+}
+li {
+	font-size: 16px;
+	font-weight: 400;
+}
+p {
+	font-size: 18px;
+}
+hr {
+    display: block;
+    height: 1px;
+    width: 55px;
+    border: 0;
+    border-top: 1px solid #00BFA5;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+.col-md-9 h2 {
+	color: #00BFA5;
+}
+
 .project {
 	position: relative;
 	float: left;
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
-	height: 300px;
+	height: 220px;
 }
 
 .project img {
