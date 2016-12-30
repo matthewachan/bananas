@@ -1,21 +1,14 @@
-h2, h3 {
-	font-family: 'Raleway';
-}
+/* General settings */
 li, p, a {
 	font-family: 'Open Sans';
 }
-h2 {
-	color: gray;
+h2{
+	font-family: 'Raleway';
 	font-size: 40px;
 	font-weight: 500;
 }
-h3 {
-	color: #F57C00;
-	font-size: 20px;
-	font-weight: 500;
-}
 li {
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 400;
 }
 p {
@@ -30,11 +23,35 @@ hr {
     margin: 1em 0;
     padding: 0; 
 }
-
-.col-md-9 h2 {
-	color: #00BFA5;
+a:visited, a:hover {
+	text-decoration: none;
 }
 
+
+
+/* Section settings */
+section > h2 {
+	/* Orange */
+	color: #00BFA5;
+}
+.projects > button {
+	background-color: white;
+	border-width: 0px;
+	border-radius: 0px;
+}
+
+/* Contact info settings */
+.contact-info h2 {
+	/* Orange header */
+	color: #E65100
+}
+.contact-info hr {
+	border-top: 1px solid #E65100;
+}
+
+
+
+/* Project thumbnail settings */
 .project {
 	position: relative;
 	float: left;
@@ -43,53 +60,19 @@ hr {
 	padding: 0;
 	height: 220px;
 }
-
 .project img {
 	display: block;
 	border-radius: 0;
 	width: 100%;
 	height: auto;
-	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: fadein 2s; /* Firefox < 16 */
-	-ms-animation: fadein 2s; /* Internet Explorer */
-	-o-animation: fadein 2s; /* Opera < 12.1 */
+	-webkit-animation: fadein 2s; 
+	-moz-animation: fadein 2s; 
+	-ms-animation: fadein 2s; 
+	-o-animation: fadein 2s;
 	animation: fadein 2s;
 }
 
-.project a {
-	text-decoration: none;
-}
-
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
+/* Project hover labels */
 .project .project-label {
 	position: absolute;
 	text-align: center;
@@ -107,9 +90,50 @@ hr {
 	font-weight: 800;
 	font-size: 44px;
 }
-
 .project:hover > .project-label {
 	visibility: visible;
 	opacity: 1;
 }
 
+/* General modal settings */
+.modal-dialog {
+	width: 40%;
+}
+.modal-footer {
+	text-align: left;
+}
+.modal-footer p {
+	font-size: 17px;
+	margin: 0 22px;
+}
+.modal-footer > a {
+	margin-top: 22px;
+}
+
+/* Modal header settings */
+.modal-header > h4 {
+	font-family: 'Open Sans';
+	font-size: 28px;
+	font-weight: 700;
+	color: black;
+}
+
+
+/* Dialog box not rounded */
+.modal-content  {
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important; 
+}
+
+
+/* Modal image settings */
+.modal-body {
+	overflow: hidden;
+	height: 300px;
+	margin: 16px 0;
+}
+.modal-body img {
+	width: 100%;
+	position: relative;
+}

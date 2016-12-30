@@ -9,7 +9,7 @@ export const routes: Routes = [
 	{ path: 'home', component: HomeComponent },
 	{ path: 'portfolio', component: PortfolioComponent },
 	{ path: 'resume', component: ContactComponent },
-	{ path: '**', component: HomeComponent },
+	{ path: '**', redirectTo: '/home', pathMatch: 'full'},
 ];
 
 export const appRouterProviders: any[] = [

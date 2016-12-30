@@ -1,85 +1,152 @@
 <div class="row container">
 
 	<div class='col-md-9'>
-		<h2>projects</h2>
-		<hr/>
-		<div class="project col-md-6">
-			<img src="../../assets/img/friendwars.jpg"/>
-			<a href="https://github.com/matthewachan/friendwars" target="_blank" class="project-label">FriendWars</a>
-		</div>
-		<div class="project col-md-6">
-			<img src="../../assets/img/invaders.jpg"/>
-			<a href="https://github.com/matthewachan/qtinvaders" target="_blank"  class="project-label">Invaders++</a>
-		</div>
-		<div class="project col-md-6">
-			<img src="../../assets/img/lanpong.jpg"/>
-			<a href="https://github.com/matthewachan/LANPong" target="_blank"  class="project-label">LANPong</a>
-		</div>
-		<div class="project col-md-6">
-			<img src="../../assets/img/mnist.png"/>
-			<a href="https://github.com/matthewachan/ml-text-analyzer" target="_blank"  class="project-label">MNIST</a>
-		</div>
-		<div class="project col-md-6">
-			<img src="../../assets/img/opencv.JPG"/>
-			<a href="https://github.com/matthewachan/opencv-image-tracker" target="_blank"  class="project-label">TrackerCV</a>
-		</div>
-		<div class="project col-md-6">
-			<img src="../../assets/img/sleepless.jpg"/>
-			<a href="http://www.sleeplesscrew.com" target="_blank"  class="project-label">Sleepless</a>
-		</div>
+		<section class="projects">
+			<h2>projects</h2>
+			<hr/>
+			<button data-target="#friendwars-modal" data-toggle="modal" class="project col-md-6">
+				<img src="../../assets/img/friendwars.jpg"/>
+				<figcaption class="project-label">FriendWars</figcaption>
+			</button>
+			<button data-target="#invaders-modal" data-toggle="modal" class="project col-md-6">
+				<img src="../../assets/img/invaders.jpg"/>
+				<figcaption class="project-label">Invaders++</figcaption>
+			</button>
+			<button data-target="#lanpong-modal" data-toggle="modal" class="project col-md-6">
+				<img src="../../assets/img/lanpong.jpg"/>
+				<figcaption class="project-label">LANPong</figcaption>
+			</button>
+			<button data-target="#mnist-modal" data-toggle="modal" class="project col-md-6">
+				<img src="../../assets/img/mnist.png"/>
+				<figcaption class="project-label">MNIST</figcaption>
+			</button>
+			<button data-target="#trackercv-modal" data-toggle="modal" class="project col-md-6">
+				<img src="../../assets/img/opencv.JPG"/>
+				<figcaption class="project-label">TrackerCV</figcaption>
+			</button>
+			<button data-target="#sleepless-modal" data-toggle="modal" class="project col-md-6">
+				<img src="../../assets/img/sleepless.jpg"/>
+				<figcaption class="project-label">SleeplessLA</figcaption>
+			</button>
+		</section>
 	</div>
 
 
 	<div class='col-md-3'>
-		<h2 style="color:#E65100">contact</h2>
-		<hr style="border-top: 1px solid #E65100"/>
-		<li>email: matthew.a.chan@gmail.com</li>
-		<li>github: <a href="https://github.com/matthewachan" target="_blank">github.com/matthewachan</a></li>
-		<li>linkedin: <a href="https://www.linkedin.com/in/matthewachan" target="_blank">linkedin.com/in/mc</a></li>
+		<section class="contact-info">
+			<h2>contact</h2>
+			<hr/>
+			<li>email: matthew.a.chan@gmail.com</li>
+			<li>github: <a href="https://github.com/matthewachan" target="_blank">github.com/matthewachan</a></li>
+			<li>linkedin: <a href="https://www.linkedin.com/in/matthewachan" target="_blank">linkedin.com/in/mc</a></li>
+		</section>
 	</div>
 
 
-</div>
-<!--
-<div class="row container">
 
-	<div class="project col-md-6">
-		<h2>projects</h2>
-		<hr/>
-		<img src="../../assets/img/friendwars.jpg"/>
-		<a href="https://github.com/matthewachan/friendwars" target="_blank" class="project-label">FriendWars</a>
-	</div>
-	<div class="project col-md-6">
-		<img src="../../assets/img/sleepless.jpg"/>
-		<a href="http://www.sleeplesscrew.com" target="_blank"  class="project-label">Sleepless</a>
-	</div>
-
-</div>
-
-<div class="row container">
-
-	<div class="project col-md-6">
-		<img src="../../assets/img/invaders.jpg"/>
-		<a href="https://github.com/matthewachan/qtinvaders" target="_blank"  class="project-label">Invaders++</a>
-	</div>
-	<div class="project col-md-6">
-		<img src="../../assets/img/opencv.jpg"/>
-		<a href="https://github.com/matthewachan/opencv-image-tracker" target="_blank"  class="project-label">TrackerCV</a>
-	</div>
 
 </div>
 
 
-<div class="row container" style="margin-bottom: 100px">
-
-	<div class="project col-md-6">
-		<img src="../../assets/img/mnist2.jpg"/>
-		<a href="https://github.com/matthewachan/ml-text-analyzer" target="_blank"  class="project-label">MNIST</a>
+<div id="friendwars-modal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">FriendWars</h4>
+			</div>
+			<div class="modal-body">
+				<img style="top: -100px;" src="../../assets/img/friendwars.jpg"/>
+			</div>
+			<div class="modal-footer">
+				<p>Started in 2016, this game is still a work-in-progress. It's a multiplayer platformer built on <a href="https://unity3d.com/" target="_blank" style="font-weight: 600; color: black;">unity3d</a>. The release of Move or Die inspired me to make a multiplayer game for my friends and I to play.</p>
+				<a style="float:right;" href="https://github.com/matthewachan/FriendWars" target="_blank"><img width=100px src="../assets/img/github.png"/></a>
+			</div>
+		</div>
 	</div>
-	<div class="project col-md-6">
-		<img src="../../assets/img/encrypt.jpg"/>
-		<a href="https://github.com/matthewachan/txtencrypter" target="_blank"  class="project-label">EncrypTxt</a>
-	</div>
-
 </div>
--->
+<div id="invaders-modal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Invaders++</h4>
+			</div>
+			<div class="modal-body">
+				<img src="../../assets/img/invaders.jpg"/>
+			</div>
+			<div class="modal-footer">
+				<p>As a final project PIC 10C, an advanced course in C++ at UCLA, I built a modern graphical recreation of Space Invaders using <a href="https://www.qt.io/developers/" target="_blank" style="color: green; font-weight: 600">Qt</a>. The game features 3 levels with unique enemies, the last being a boss level. If interested, the GitHub repository includes DOxygen HTML and LaTeX files for code details.</p>
+				<a style="float:right;" href="https://github.com/matthewachan/Invaderspp" target="_blank"><img width=100px src="../assets/img/github.png"/></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="lanpong-modal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">LANPong</h4>
+			</div>
+			<div class="modal-body">
+				<img src="../../assets/img/lanpong.jpg"/>
+			</div>
+			<div class="modal-footer">
+				<p>As an effort to learn sockets and networking for game development, I created a version of Pong that can be played over LAN. One player will create a server by specifying a port (try to use ports above 1024 or else it may conflict with other applications). Then anyone else on the network can connect to that player by entering that person's IP address and the same port number. The entire application was created in Java using the AWT and Swing libraries.</p>
+				<a style="float:right;" href="https://github.com/matthewachan/lanpong" target="_blank"><img width=100px src="../assets/img/github.png"/></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="mnist-modal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">MNIST</h4>
+			</div>
+			<div class="modal-body">
+				<img src="../../assets/img/mnist.png"/>
+			</div>
+			<div class="modal-footer">
+				<p>As an introduction to machine learning, I developed a simple Python script to read a page full of handwritten letters and identify each letter. By implementing a support-vector machine, the classification model achieved 99% accuracy using only 20% of the data for training.</p>
+				<a style="float:right;" href="https://github.com/matthewachan/mnist" target="_blank"><img width=100px src="../assets/img/github.png"/></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="trackercv-modal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">TrackerCV</h4>
+			</div>
+			<div class="modal-body">
+				<img src="../../assets/img/opencv.JPG"/>
+			</div>
+			<div class="modal-footer">
+				<p>In an experiment with computer vision, I developed a script to track and visually highlight an object in a video clip. Additionally, the xy-coordinates of the object in the video frame are plotted to graphically show the travel path of the object over time.</p>
+				<a style="float:right;" href="https://github.com/matthewachan/imgTrack" target="_blank"><img width=100px src="../assets/img/github.png"/></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="sleepless-modal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">SleeplessLA</h4>
+			</div>
+			<div class="modal-body">
+				<img style="top: -100px;" src="../../assets/img/sleepless.jpg"/>
+			</div>
+			<div class="modal-footer">
+				<p>As a side project, I built a <a href="http://www.sleeplesscrew.com" target="_blank">website</a> for my street dance crew Sleepless to help facilitate our event-booking process. The page was built using AngularJS and Node.js and deployed on Heroku.</p>
+				<a style="float:right;" href="https://github.com/matthewachan/sleeplessla" target="_blank"><img width=100px src="../assets/img/github.png"/></a>
+			</div>
+		</div>
+	</div>
+</div>\

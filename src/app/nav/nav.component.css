@@ -1,26 +1,46 @@
-body, h1, h2, h3, h4, h5, p, a {
+.navbar {
+	/* Set navbar color */
+	background-color:#FFA726;
+	border-radius: 0px;
+	border-width: 0px;
+}
+
+.navbar-header button {
+	border-color: white;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: white;
+}
+
+
+/* Logo settings */
+.navbar-brand {
+	font-family: 'Niconne'; 
+	font-size: 30px
+}
+.navbar .navbar-brand:hover {
+	color: #00BFA5;
+}
+
+
+
+
+
+/* Navigation link text settings */
+.navbar-default a {
+	/* Link text color */
 	color: white;
 }
-
-ul a:hover {
-	color: gray;
-}
-
-
-.navbar .navbar-brand:hover {
-	color: #4286f4;
-}
-
+ .navbar-default .navbar-nav  .active,
+ .navbar-default .navbar-nav  .active  a,
+ .navbar-default .navbar-nav  .active  a:hover,
+ .navbar-default .navbar-nav  .active  a:focus {
+      /* Active link colors */
+      color: gray;
+      background: #FFCC80;
+ }
+ /* Remove link underlining */
 a:visited, a:active {
 	text-decoration: none;
 	color: white;
-}
-
-.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
-    background-color: rgba(0,0,0,0);
-}
-
-.active {
-	text-decoration: underline;
-	color: gray;
 }

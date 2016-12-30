@@ -1,21 +1,16 @@
-h2, h3 {
-	font-family: 'Raleway';
-}
+/* General settings */
 li, p, a {
 	font-family: 'Open Sans';
 }
+h2, h3 {
+	font-family: 'Raleway';
+}
 h2 {
-	color: gray;
 	font-size: 40px;
 	font-weight: 500;
 }
-h3 {
-	color: #F57C00;
-	font-size: 20px;
-	font-weight: 500;
-}
 li {
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 400;
 }
 p {
@@ -30,22 +25,64 @@ hr {
     margin: 1em 0;
     padding: 0; 
 }
+a:visited, a:hover {
+	text-decoration: none;
+}
+
+
+/* Spacing */
+.frameworks {
+	display: block;
+	float: left;
+	margin-top: 55px;
+}
+
+
+
+
+/* Section settings */
+section > h2 {
+	/* Orange */
+	color: #00BFA5;
+}
+section > h3 {
+	/* Teal accent */
+	color: #F57C00;
+	font-size: 20px;
+	font-weight: 500;
+}
+.li-header {
+	/* Dark teal */
+	color:#26A69A;
+}
+.frameworks > button {
+	background-color: white;
+	border-width: 0px;
+	border-radius: 0px;
+}
+
+/* Contact info settings */
+.contact-info h2 {
+	/* Orange header */
+	color: #E65100
+}
+.contact-info hr {
+	border-top: 1px solid #E65100;
+}
+
+
+
+
+
+
+
+
+/* Image hover labels */
 .wrapper {
 	position: relative;
 	float: left;
 	overflow: hidden;
 	padding: 0;
-
-}
-
-.col-md-9 h2 {
-	color: #00BFA5;
-}
-
-.languages, .frameworks {
-	display: block;
-	float: left;
-	margin-top: 55px;
 }
 
 .wrapper img {
@@ -59,8 +96,30 @@ hr {
 	-o-animation: fadein 2s; /* Opera < 12.1 */
 	animation: fadein 2s;
 }
+.wrapper .label {
+	position: absolute;
+	text-align: center;
+	margin: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(255, 255, 255, 0.4);
+	color: black;
+	visibility: hidden;
+	opacity: 0;
+	font-family: 'Raleway';
+	font-weight: 800;
+	font-size: 22px;
+}
+
+.wrapper:hover > .label {
+	visibility: visible;
+	opacity: 1;
+}
 
 
+/* Fade-in image animations */
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -89,43 +148,47 @@ hr {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-.wrapper .label {
-	position: absolute;
-	text-align: center;
-	margin: 0;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(255, 255, 255, 0.4);
-	color: black;
-	visibility: hidden;
-	opacity: 0;
-	font-family: 'Raleway';
-	font-weight: 800;
-	font-size: 22px;
+
+
+
+/* General modal settings */
+.modal-dialog {
+	width: 40%;
 }
-/*
-.wrapper .label {
-	position: absolute;
-	text-align: center;
-	margin: 0;
-	padding-top: 40%;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(255, 255, 255, 0.4);
-	color: black;
-	visibility: hidden;
-	opacity: 0;
-	font-family: 'Raleway';
-	font-weight: 800;
-	font-size: 22px;
+.modal-footer {
+	text-align: left;
 }
-*/
-.wrapper:hover > .label {
-	visibility: visible;
-	opacity: 1;
+.modal-footer p {
+	font-size: 17px;
+	margin: 0 22px;
+}
+
+
+/* Modal header settings */
+.modal-header > h4 {
+	font-family: 'Open Sans';
+	font-size: 28px;
+	font-weight: 700;
+	color: black;
+}
+
+
+/* Dialog box not rounded */
+.modal-content  {
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important; 
+}
+
+
+/* Modal image settings */
+.modal-body {
+	overflow: hidden;
+	height: 300px;
+	margin: 16px 0;
+}
+.modal-body img {
+	width: 100%;
+	position: relative;
 }
 
